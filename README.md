@@ -2,6 +2,10 @@
 
 > An AI-powered, event-driven core banking platform built with Java and Spring Boot.
 
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/status-in%20development-orange.svg)]()
+[![Architecture](https://img.shields.io/badge/architecture-modular%20monolith-purple.svg)]()
+
 ## Overview
 
 Treasure Bank is an open-source project focused on building a modern core banking system from the ground up.
