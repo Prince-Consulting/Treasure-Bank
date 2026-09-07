@@ -26,43 +26,30 @@ The system will progressively cover core banking capabilities including customer
 - Maven
 - Docker
 
-## Architecture
+## Architecture 
 
-The initial architecture follows a modular monolith approach.
+A high-level overview of the Treasure Bank architecture, including the modular monolith structure, domain boundaries, event-driven communication, and AI architecture. 
+[View Architecture Documentation](docs/architecture/README.md)
 
-```text
-                    Treasure Bank
-                         |
-                +--------+--------+
-                |                 |
-          Banking Modules     AI Intelligence
-                |                 |
-                +--------+--------+
-                         |
-                  Event-Driven Core
-                         |
-                       Kafka
-                         |
-                      Ledger
-```
+## Core Banking Domains
 
-The system will maintain clear boundaries between banking domains while using events for communication and integration.
+The planned banking domains and their responsibilities are documented separately and will evolve as implementation progresses. 
+[View Core Banking Domains](docs/domains/README.md)
 
-The financial ledger will remain the authoritative source of financial state.
+## Development 
 
-Planned Core Domains
-Customer & Identity
-Accounts & Deposits
-Product Management
-Transactions
-Payments
-Ledger & Accounting
-Lending & Credit
-Risk & Compliance
-Fraud
-AI Intelligence
+Treasure Bank is developed incrementally through milestones and GitHub issues. Each milestone represents a defined stage of the platform's development. 
+[View Development Process](docs/development/README.md)
 
-Additional domains will be introduced as the project evolves.
+## Roadmap 
+
+The project roadmap defines the planned milestones and the progression from the engineering foundation to a complete AI-powered core banking platform. 
+[View Roadmap](docs/roadmap/README.md)
+
+## Architecture Decisions 
+
+Significant architectural and technical decisions are documented using Architecture Decision Records (ADRs). 
+[View Architecture Decision Records](docs/adr/README.md)
 
 ## Project Status
 
@@ -72,33 +59,20 @@ The project is currently being established from the architectural and engineerin
 
 Development will be organized into milestones, with implementation tracked through GitHub issues.
 
-## Development Approach
+## Documentation 
 
-The project will be developed incrementally:
+Project documentation is maintained alongside the implementation. 
 
-Backlog
-   ↓
-Milestone
-   ↓
-Issue
-   ↓
-Design
-   ↓
-Implementation
-   ↓
-Testing
-   ↓
-Review
-   ↓
-Merge
+- [Architecture](docs/architecture/README.md)
+- [Core Banking Domains](docs/domains/README.md)
+- [Development](docs/development/README.md)
+- [Roadmap](docs/roadmap/README.md)
+- [Architecture Decision Records](docs/adr/README.md)
 
-Architecture decisions and significant technical decisions will be documented as the project evolves.
+## License 
 
-## Documentation
-
-Project documentation will be maintained alongside the implementation.
-
----
+Treasure Bank is licensed under the **Apache License 2.0**. 
+See the [LICENSE](LICENSE) file for the full license text.
 
 ## Disclaimer
 
