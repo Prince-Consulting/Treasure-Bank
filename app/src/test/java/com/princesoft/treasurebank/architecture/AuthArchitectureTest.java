@@ -33,4 +33,13 @@ class AuthArchitectureTest {
                     .should()
                     .dependOnClassesThat()
                     .resideInAnyPackage("..auth.infrastructure..");
+
+    @ArchTest
+    static final ArchRule infrastructure_must_not_depend_on_application =
+            noClasses()
+                    .that()
+                    .resideInAPackage("..auth.infrastructure..")
+                    .should()
+                    .dependOnClassesThat()
+                    .resideInAnyPackage("..auth.application..");
 }
