@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.1</version>
+        <groupId>com.princesoft</groupId>
+        <artifactId>TreasureBank</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>../../../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 

@@ -4,12 +4,29 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.1</version>
+        <groupId>com.princesoft</groupId>
+        <artifactId>TreasureBank</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>../../../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>auth_internal</artifactId>
+
+    <name>auth_internal</name>
+    <description>Authentication internal implementation</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+        </dependency>
+
+        <!-- Auth_Internal depends on Auth_API for shared interfaces and DTOs -->
+        <dependency>
+            <groupId>com.princesoft</groupId>
+            <artifactId>auth_api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
