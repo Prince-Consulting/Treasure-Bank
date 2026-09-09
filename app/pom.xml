@@ -30,6 +30,13 @@
             <version>${spring-modulith.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.tngtech.archunit</groupId>
+            <artifactId>archunit-junit5</artifactId>
+            <version>1.4.1</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Custom dependencies for Treasure bank project -->
         <dependency>
             <groupId>com.princesoft</groupId>

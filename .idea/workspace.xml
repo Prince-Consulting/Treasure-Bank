@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19abbab2-02a1-47d0-8242-28fb865ccb88" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/modules/auth/auth_internal/src/main/java/com/princesoft/auth_internal/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth/auth_internal/src/main/java/com/princesoft/auth_internal/application/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
