@@ -24,6 +24,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.modulith</groupId>
+            <artifactId>spring-modulith-starter-core</artifactId>
+            <version>${spring-modulith.version}</version>
+        </dependency>
+
         <!-- Custom dependencies for Treasure bank project -->
         <dependency>
             <groupId>com.princesoft</groupId>
