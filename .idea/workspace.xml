@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19abbab2-02a1-47d0-8242-28fb865ccb88" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/auth/auth_internal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth/auth_internal/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/auth/auth_internal/src/main/java/com/princesoft/auth_internal/application/Impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth/auth_internal/src/main/java/com/princesoft/auth_internal/impl/AuthServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="19abbab2-02a1-47d0-8242-28fb865ccb88" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +78,21 @@
       <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.TreasureBankApplication (1)">
+    <configuration name="TreasureBankApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.princesoft.treasurebank.TreasureBankApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.princesoft.treasurebank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TreasureBankApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="TreasureBank" />
@@ -100,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.TreasureBankApplication (1)" />
         <item itemvalue="Spring Boot.TreasureBankApplication" />
       </list>
     </recent_temporary>
