@@ -7,13 +7,9 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>4.1.1</version>
-        <relativePath>../../pom.xml</relativePath> <!-- lookup parent from repository -->
+        <relativePath>../../../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.princesoft</groupId>
-    <artifactId>auth</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>auth</name>
-    <description>auth - This is IAM module for Treasure Bank</description>
+    <artifactId>auth_internal</artifactId>
 
 </project>
