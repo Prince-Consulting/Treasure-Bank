@@ -8,27 +8,23 @@
         <version>4.1.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.princesoft</groupId>
     <artifactId>TreasureBank</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>TreasureBank</name>
-    <description>TreasureBank</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
+    <description>TreasureBank - An AI-powered, event-driven core banking platform built with Java and Spring Boot.</description>
+
+    <packaging>pom</packaging>
+
     <properties>
         <java.version>25</java.version>
     </properties>
+
+    <modules>
+        <module>modules/auth</module>
+    </modules>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
