@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/modules/auth/pom.xml" />
         <option value="$PROJECT_DIR$/modules/auth/auth_api/pom.xml" />
+        <option value="$PROJECT_DIR$/modules/auth/auth_internal/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
