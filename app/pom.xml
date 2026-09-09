@@ -28,7 +28,7 @@
         <dependency>
             <groupId>com.princesoft</groupId>
             <artifactId>auth_internal</artifactId>
-            <version>${project.version}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

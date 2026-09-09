@@ -1,4 +1,4 @@
-package com.princesoft.auth_internal.application.Impl;
+package com.princesoft.auth_internal.impl;
 
 import com.princesoft.auth_api.api.AuthService;
 import org.springframework.stereotype.Service;
