@@ -56,4 +56,13 @@ class AuthArchitectureTest {
                             "..auth.infrastructure..",
                             "..auth.config.."
                     );
+
+    @ArchTest
+    static final ArchRule configuration_must_not_depend_on_domain =
+            noClasses()
+                    .that()
+                    .resideInAPackage("..auth.config..")
+                    .should()
+                    .dependOnClassesThat()
+                    .resideInAnyPackage("..auth.domain..");
 }
