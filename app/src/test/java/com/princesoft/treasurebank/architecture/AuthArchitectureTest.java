@@ -42,4 +42,18 @@ class AuthArchitectureTest {
                     .should()
                     .dependOnClassesThat()
                     .resideInAnyPackage("..auth.application..");
+
+    @ArchTest
+    static final ArchRule auth_api_must_not_depend_on_internal =
+            noClasses()
+                    .that()
+                    .resideInAPackage("..auth.api..")
+                    .should()
+                    .dependOnClassesThat()
+                    .resideInAnyPackage(
+                            "..auth.application..",
+                            "..auth.domain..",
+                            "..auth.infrastructure..",
+                            "..auth.config.."
+                    );
 }
