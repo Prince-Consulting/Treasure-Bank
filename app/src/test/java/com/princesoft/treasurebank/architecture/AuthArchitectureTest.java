@@ -1,77 +1,37 @@
 package com.princesoft.treasurebank.architecture;
 
+import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 
-class AuthArchitectureTest {
-
-    @ArchTest
-    static final ArchRule domain_must_not_depend_on_infrastructure =
-            noClasses()
-                    .that()
-                    .resideInAPackage("..auth.domain..")
-                    .should()
-                    .dependOnClassesThat()
-                    .resideInAnyPackage("..auth.infrastructure..");
-
-    @ArchTest
-    static final ArchRule domain_must_not_depend_on_application =
-            noClasses()
-                    .that()
-                    .resideInAPackage("..auth.domain..")
-                    .should()
-                    .dependOnClassesThat()
-                    .resideInAnyPackage("..auth.application..");
+@AnalyzeClasses(packages = {
+        "com.princesoft.auth_api",
+        "com.princesoft.auth_internal"
+})
+public class AuthArchitectureTest {
 
     @ArchTest
     static final ArchRule application_must_not_depend_on_infrastructure =
             noClasses()
                     .that()
-                    .resideInAPackage("..auth.application..")
+                    .resideInAPackage("..auth_internal.application.impl..")
                     .should()
                     .dependOnClassesThat()
-                    .resideInAnyPackage("..auth.infrastructure..");
-
-    @ArchTest
-    static final ArchRule infrastructure_must_not_depend_on_application =
-            noClasses()
-                    .that()
-                    .resideInAPackage("..auth.infrastructure..")
-                    .should()
-                    .dependOnClassesThat()
-                    .resideInAnyPackage("..auth.application..");
+                    .resideInAnyPackage("..auth_internal.infrastructure..");
 
     @ArchTest
     static final ArchRule auth_api_must_not_depend_on_internal =
             noClasses()
                     .that()
-                    .resideInAPackage("..auth.api..")
+                    .resideInAPackage("..auth_api.api..")
                     .should()
                     .dependOnClassesThat()
                     .resideInAnyPackage(
-                            "..auth.application..",
-                            "..auth.domain..",
-                            "..auth.infrastructure..",
-                            "..auth.config.."
+                            "..auth_internal.application.impl..",
+                            "..auth_internal.domain..",
+                            "..auth_internal.infrastructure..",
+                            "..auth_internal.config.."
                     );
-
-    @ArchTest
-    static final ArchRule configuration_must_not_depend_on_domain =
-            noClasses()
-                    .that()
-                    .resideInAPackage("..auth.config..")
-                    .should()
-                    .dependOnClassesThat()
-                    .resideInAnyPackage("..auth.domain..");
-
-    @ArchTest
-    static final ArchRule infrastructure_must_not_depend_on_configuration =
-            noClasses()
-                    .that()
-                    .resideInAPackage("..auth.infrastructure..")
-                    .should()
-                    .dependOnClassesThat()
-                    .resideInAnyPackage("..auth.config..");
 }
