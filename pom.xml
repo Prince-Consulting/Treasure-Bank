@@ -27,6 +27,7 @@
         <module>app</module>
         <module>modules/auth/auth_api</module>
         <module>modules/auth/auth_internal</module>
+        <module>modules/shared/shared_kernel</module>
     </modules>
 
 </project>
