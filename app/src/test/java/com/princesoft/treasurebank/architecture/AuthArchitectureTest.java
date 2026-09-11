@@ -34,4 +34,13 @@ public class AuthArchitectureTest {
                             "..auth_internal.infrastructure..",
                             "..auth_internal.config.."
                     );
+
+    @ArchTest
+    static final ArchRule internal_implementation_must_not_be_used_as_public_api =
+            noClasses()
+                    .that()
+                    .resideOutsideOfPackage("..auth_internal..")
+                    .should()
+                    .dependOnClassesThat()
+                    .resideInAnyPackage("..auth_internal..");
 }
