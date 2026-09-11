@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/modules/auth/auth_api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/auth/auth_internal/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/shared/shared_kernel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
