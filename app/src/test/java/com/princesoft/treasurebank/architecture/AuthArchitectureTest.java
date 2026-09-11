@@ -8,10 +8,12 @@ import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 
 @AnalyzeClasses(packages = {
         "com.princesoft.auth_api",
-        "com.princesoft.auth_internal"
+        "com.princesoft.auth_internal",
+        "com.princesoft.shared_kernel"
 })
 public class AuthArchitectureTest {
 
+    //-------------- AUTH ARCH UNIT TEST --------------------
     @ArchTest
     static final ArchRule application_must_not_depend_on_infrastructure =
             noClasses()
@@ -43,4 +45,17 @@ public class AuthArchitectureTest {
                     .should()
                     .dependOnClassesThat()
                     .resideInAnyPackage("..auth_internal..");
+
+    //---------------- SHARED KERNEL ARCH UNIT TEST --------------------------
+//    @ArchTest
+//    static final ArchRule shared_kernel_must_not_depend_on_modules =
+//            noClasses()
+//                    .that()
+//                    .resideInAnyPackage("..shared.kernel..")
+//                    .should()
+//                    .dependOnClassesThat()
+//                    .resideInAnyPackage(
+//                            "..auth_api..",
+//                            "..auth_internal.."
+//                    );
 }
