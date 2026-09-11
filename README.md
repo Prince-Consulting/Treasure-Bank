@@ -28,6 +28,7 @@ The system will progressively cover core banking capabilities including customer
 - Docker
 - IaC
 - AWS (VPC, Subnets, ELB, AWS fargate/EC2, AWS RDB, ElasticCache)
+- Grafana & Prometheus (Monitoring)
 
 ## Architecture 
 
