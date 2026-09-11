@@ -58,4 +58,15 @@ public class AuthArchitectureTest {
 //                            "..auth_api..",
 //                            "..auth_internal.."
 //                    );
+
+    //---------------- DATABASE OWNERSHIP ARCH UNIT TEST --------------------------
+//    @ArchTest
+//    static final ArchRule auth_persistence_must_stay_inside_auth_internal =
+//            noClasses()
+//                    .that()
+//                    .resideOutsideOfPackage("..auth_internal..")
+//                    .should()
+//                    .dependOnClassesThat()
+//                    .resideInAnyPackage("..auth_internal.infrastructure.persistence..");
+//
 }
