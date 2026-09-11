@@ -21,10 +21,13 @@ The system will progressively cover core banking capabilities including customer
 - PostgreSQL 18+
 - Redis
 - Apache Kafka
-- Spring Security
+- Spring Security (JWT, RBAC, OIDC/JWKS)
+- RestAPI & gRPC
 - OpenAPI / Swagger
 - Maven
 - Docker
+- IaC
+- AWS (VPC, Subnets, ELB, AWS fargate/EC2, AWS RDB, ElasticCache)
 
 ## Architecture 
 
