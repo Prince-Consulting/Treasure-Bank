@@ -21,6 +21,11 @@
             <artifactId>spring-context</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+        </dependency>
+
         <!-- Auth_Internal depends on Auth_API for shared interfaces and DTOs -->
         <dependency>
             <groupId>com.princesoft</groupId>

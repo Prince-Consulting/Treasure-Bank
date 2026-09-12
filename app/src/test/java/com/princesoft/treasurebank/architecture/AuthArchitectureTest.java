@@ -3,7 +3,9 @@ package com.princesoft.treasurebank.architecture;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
+import org.springframework.transaction.annotation.Transactional;
 
+import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.classes;
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 
 @AnalyzeClasses(packages = {
@@ -83,4 +85,15 @@ public class AuthArchitectureTest {
                             "..auth_internal.application.impl..",
                             "..auth_internal.infrastructure.."
                     );
+
+    //---------------- TRANSACTIONAL ARCH UNIT TEST --------------------------
+//    @ArchTest
+//    static final ArchRule transactions_must_be_defined_in_application =
+//            classes()
+//                    .that()
+//                    .areAnnotatedWith(Transactional.class)
+//                    .should()
+//                    .resideInAnyPackage("..auth_internal.application.service.."
+//                    );
+
 }
