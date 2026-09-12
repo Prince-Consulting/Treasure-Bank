@@ -69,4 +69,18 @@ public class AuthArchitectureTest {
 //                    .dependOnClassesThat()
 //                    .resideInAnyPackage("..auth_internal.infrastructure.persistence..");
 //
+
+    //---------------- AUTH_API DATA BOUNDARY ARCH UNIT TEST --------------------------
+    @ArchTest
+    static final ArchRule auth_api_must_not_expose_internal_data_access =
+            noClasses()
+                    .that()
+                    .resideInAnyPackage("..auth_api..")
+                    .should()
+                    .dependOnClassesThat()
+                    .resideInAnyPackage(
+                            "..auth_internal.domain..",
+                            "..auth_internal.application.impl..",
+                            "..auth_internal.infrastructure.."
+                    );
 }
