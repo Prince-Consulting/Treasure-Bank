@@ -48,6 +48,15 @@ public class AuthArchitectureTest {
                     .dependOnClassesThat()
                     .resideInAnyPackage("..auth_internal..");
 
+//    @ArchTest
+//    static final ArchRule domain_must_not_depend_on_infrastructure =
+//            noClasses()
+//                    .that()
+//                    .resideInAnyPackage("..auth_internal.domain..")
+//                    .should()
+//                    .dependOnClassesThat()
+//                    .resideInAnyPackage("..auth_internal.infrastructure..");
+
     //---------------- SHARED KERNEL ARCH UNIT TEST --------------------------
 //    @ArchTest
 //    static final ArchRule shared_kernel_must_not_depend_on_modules =
