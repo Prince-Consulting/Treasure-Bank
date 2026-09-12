@@ -32,7 +32,7 @@ The system will progressively cover core banking capabilities including customer
 
 ## Architecture 
 
-A high-level overview of the Treasure Bank architecture, including the modular monolith structure, domain boundaries, event-driven communication, and AI architecture. 
+A high-level overview of the Treasure Bank architecture, including the modular monolith structure, domain boundaries, event-driven communication, and AI architecture.
 [View Architecture Documentation](docs/architecture/README.md)
 
 ## Core Banking Domains
