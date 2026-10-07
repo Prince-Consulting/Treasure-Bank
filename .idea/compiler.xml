@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="auth_api" />
         <module name="app" />
+        <module name="shared-kernel" />
         <module name="shared_kernel" />
         <module name="auth_internal" />
       </profile>
@@ -23,6 +24,7 @@
       <module name="auth-api" options="-parameters" />
       <module name="auth_api" options="-parameters" />
       <module name="auth_internal" options="-parameters" />
+      <module name="shared-kernel" options="-parameters" />
       <module name="shared_kernel" options="-parameters" />
     </option>
   </component>
