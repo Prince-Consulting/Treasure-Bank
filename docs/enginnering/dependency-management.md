@@ -223,23 +223,3 @@ The project should favor a **small, well-understood dependency graph** over accu
 
 ---
 
-## 14. Acceptance Criteria
-
-This requirement is fulfilled when:
-
-- [ ] All dependencies are declared through Maven.
-- [ ] Dependency versions are centrally and consistently managed.
-- [ ] Spring Boot-managed dependencies use the appropriate dependency-management/BOM mechanism.
-- [ ] Dynamic dependency versions are prohibited.
-- [ ] Direct and transitive dependencies are intentionally distinguished.
-- [ ] Dependency scopes accurately reflect dependency usage.
-- [ ] Unused and redundant dependencies can be identified and removed.
-- [ ] Dependency vulnerability scanning is integrated into CI.
-- [ ] A documented process exists for handling vulnerable dependencies that cannot immediately be upgraded.
-- [ ] Maven Wrapper is committed and used by the project.
-- [ ] Dependency resolution is deterministic.
-- [ ] Dependency integrity/provenance is addressed.
-- [ ] New dependencies require an engineering justification.
-- [ ] Dependency upgrades are tested for Java 25+ and Spring Boot 4.1.x compatibility.
-- [ ] Dependency management is integrated with the project's CI quality gates.
-- [ ] The dependency graph remains intentionally small and maintainable.
